@@ -1,6 +1,18 @@
 import java.util.Scanner;
 public class App1 {
 public static void main(String[] args) {
-	
+	Scanner scan = new Scanner(System.in);
+	int v[] = {48, 7, 25, 48, 6, 9, 2};
+	int cont = 0;
+	System.out.println("Digite uma nota");
+	int n = scan.nextInt();
+	for(int i = 0; i < v.length; i++) {
+		if (v[i] == n)
+			cont++;
+	}
+	if (cont >= 1)
+		System.out.println("O número " + n + " apareceu " + cont + " vezes no vetor.");
+	else
+		System.out.println("O número " + n + " não apareceu nenhuma vez no vetor.");	
 }
 }
